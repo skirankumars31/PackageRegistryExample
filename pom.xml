@@ -6,7 +6,7 @@
 
   <groupId>com.kiran</groupId>
   <artifactId>PackageRegistryExample</artifactId>
-  <version>1.0</version>
+  <version>4.0</version>
 
   <name>PackageRegistryExample</name>
   <!-- FIXME change it to the project's website -->
@@ -26,6 +26,13 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <repository>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/skirankumars31/PackageRegistryExample</url>
+    </repository>
+  </distributionManagement>
 
   <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
